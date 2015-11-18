@@ -12,12 +12,13 @@ namespace MeaasgePanel
 {
     public partial class FormMPanel : Form
     {
-        PictureBox[][] picBox;
+        PictureBox[,] picBox;
         int xPicBox = 3;
         int yPicBox = 3;
         public FormMPanel()
         {
             InitializeComponent();
+
             initPicBox(xPicBox, yPicBox); //初始化picbox并显示
             
 
@@ -26,9 +27,10 @@ namespace MeaasgePanel
         {
             for (int i = 0; i < xPicBox; i++)
                 for (int j = 0; j < yPicBox; j++)
-                { 
-                    picBox[i][j] = new PictureBox(); 
-                    picBox[i][j].Location = new Point(20 + j * 10 ,30 + i * 10);
+                {                 
+                    picBox[i, j].Image = iltMPanel.Images[0];
+                    picBox[i,j].Location = new Point(20 + j * 10 ,30 + i * 10);
+                    
                 }
         }
 

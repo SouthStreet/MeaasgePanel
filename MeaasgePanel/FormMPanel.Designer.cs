@@ -28,7 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMPanel));
+            this.iltMPanel = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
+            // 
+            // iltMPanel
+            // 
+            this.iltMPanel.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("iltMPanel.ImageStream")));
+            this.iltMPanel.TransparentColor = System.Drawing.Color.Transparent;
+            this.iltMPanel.Images.SetKeyName(0, "ban.png");
             // 
             // FormMPanel
             // 
@@ -42,5 +51,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.ImageList iltMPanel;
     }
 }
