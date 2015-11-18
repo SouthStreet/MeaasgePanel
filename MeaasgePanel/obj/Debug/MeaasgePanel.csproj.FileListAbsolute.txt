@@ -1,1 +1,10 @@
 C:\Users\SouthStreet\Desktop\信息版\MeaasgePanel\MeaasgePanel\bin\Debug\MeaasgePanel.exe.config
+C:\Users\SouthStreet\Desktop\信息版\MeaasgePanel\MeaasgePanel\bin\Debug\MeaasgePanel.exe
+C:\Users\SouthStreet\Desktop\信息版\MeaasgePanel\MeaasgePanel\bin\Debug\MeaasgePanel.pdb
+C:\Users\SouthStreet\Desktop\信息版\MeaasgePanel\MeaasgePanel\obj\Debug\MeaasgePanel.csprojResolveAssemblyReference.cache
+C:\Users\SouthStreet\Desktop\信息版\MeaasgePanel\MeaasgePanel\obj\Debug\MeaasgePanel.Properties.Resources.resources
+C:\Users\SouthStreet\Desktop\信息版\MeaasgePanel\MeaasgePanel\obj\Debug\MeaasgePanel.csproj.GenerateResource.Cache
+C:\Users\SouthStreet\Desktop\信息版\MeaasgePanel\MeaasgePanel\obj\Debug\MeaasgePanel.exe
+C:\Users\SouthStreet\Desktop\信息版\MeaasgePanel\MeaasgePanel\obj\Debug\MeaasgePanel.pdb
+C:\Users\SouthStreet\Desktop\信息版\MeaasgePanel\MeaasgePanel\obj\Debug\MeaasgePanel.FormMPanel.resources
+C:\Users\SouthStreet\Desktop\信息版\MeaasgePanel\MeaasgePanel\obj\Debug\MeaasgePanel.FormStart.resources

@@ -1,6 +1,6 @@
 ﻿namespace MeaasgePanel
 {
-    partial class Form1
+    partial class FormStart
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -40,6 +40,7 @@
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "开始";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnExit
             // 
@@ -49,6 +50,7 @@
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "退出";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form1
             // 
@@ -59,6 +61,7 @@
             this.Controls.Add(this.btnStart);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
