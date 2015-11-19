@@ -46,6 +46,7 @@
             this.ClientSize = new System.Drawing.Size(673, 335);
             this.Name = "FormMPanel";
             this.Text = "FormMPanel";
+            this.Load += new System.EventHandler(this.FormMPanel_Load);
             this.ResumeLayout(false);
 
         }
