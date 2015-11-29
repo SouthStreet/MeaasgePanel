@@ -11,9 +11,22 @@ namespace MeaasgePanel
     {
 
         List<Point> clickTrace;
+        public int[,] numTable;
         public Expert()
         {
             clickTrace = new List<Point>();
+            initNumTable();
+        }
+        private void initNumTable()
+        {
+            numTable = new int[5, 5];
+             Random ran = new Random();
+             for (int i = 0; i < 5; i++)
+                 for (int j = 0; j < 5; j++)
+                 {
+                     numTable[i, j] = ran.Next(1,8);
+   
+                 }         
         }
 
         public Point getLastPoint()

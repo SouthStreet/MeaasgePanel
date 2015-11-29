@@ -28,16 +28,17 @@ namespace MeaasgePanel
         }
         public void init()
         {
+            expert = new Expert();
             initLbl(xPicBox, yPicBox); 
             initPicBox(xPicBox, yPicBox); //初始化picbox并显示
-            expert = new Expert();
+            
             timerStarted = false;
             labelShowTime.Text = timeToCount.ToString();
         }
         private void initLbl(int xPicBox, int yPicBox)
         {
             lblBox = new Label[xPicBox, yPicBox];
-            Random ran = new Random();
+           
             for (int i = 0; i < xPicBox; i++)
                 for (int j = 0; j < yPicBox; j++)
                 {
@@ -45,12 +46,8 @@ namespace MeaasgePanel
                     this.lblBox[i, j].Name = "lbl" + i.ToString() + j.ToString();
                     this.lblBox[i, j].Location = new Point(20 + j * 70, 30 + i * 60);
                     this.lblBox[i, j].Size =  new System.Drawing.Size(64, 36);
-                    this.lblBox[i, j].TextAlign = ContentAlignment.TopLeft;
-
-
-                    
-                    int ranNum = ran.Next() % 7 +1;
-                    this.lblBox[i, j].Text = ranNum.ToString();
+                    this.lblBox[i, j].TextAlign = ContentAlignment.TopLeft;                   
+                    this.lblBox[i, j].Text = expert.numTable[i, j].ToString();                   
                     this.lblBox[i, j].Hide();
                     Controls.Add(lblBox[i, j]);
                 }
@@ -88,7 +85,7 @@ namespace MeaasgePanel
                 timer.Start();
                 timerStarted = true;
             }
-            if(timeToCount >=0)
+            if(timeToCount >= 0)
             {
                 string str = (sender as PictureBox).Name;
                 int i = Convert.ToInt32(str.Substring(3, 1));
